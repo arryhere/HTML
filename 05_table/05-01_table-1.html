@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webite</title>
+    <style>
+        table {
+            table-layout: fixed;
+            border-collapse: collapse;
+            border: 2px solid black;
+            width: 500px;
+            height: 200px;
+            margin: 0 auto;
+        }
+
+        th,
+        td {
+            border: 2px solid black;
+            text-align: center;
+            word-wrap: break-word;
+            width: 50px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Tables</h1>
+    </header>
+
+    <main>
+        <section>
+            <table>
+                <caption><h1>Database</h1></caption>
+                <thead style="background-color: #3f87a6;">
+                    <tr>
+                        <th scope="row">Header</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Age</th>
+                        <th scope="col">Gender</th>
+                    </tr>
+                </thead>
+                <tbody style="background-color: #e4f0f5;">
+                    <tr>
+                        <th scope="row" rowspan="3">Body</th>
+                        <td>Arijit</td>
+                        <td>22</td>
+                        <td>Male</td>
+                    </tr>
+                    <tr>
+                        <td>Divya</td>
+                        <td>21</td>
+                        <td>Female</td>
+                    </tr>
+                    <tr>
+                        <td>Ravi</td>
+                        <td>23</td>
+                        <td>Others</td>
+                    </tr>
+                </tbody>
+                <tfoot style="background-color: #3f87a6;">
+                    <tr>
+                        <th scope="row" rowspan="3">Footer</th>
+                        <th rowspan="2">Entry</th>
+                        <td>done</td>
+                        <td>done</td>
+                    </tr>
+                    <tr>
+                        <td>done</td>
+                        <td>done</td>
+                    </tr>
+                    <tr>
+                        <th colspan="3">Entry done</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>
