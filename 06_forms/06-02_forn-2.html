@@ -95,7 +95,7 @@
                     <div>
                         <label for="textarea">Tetarea</label>
                     </div>
-                    <textarea name="textarea" id="textarea" cols="50" rows="5" placeholder="...textarea"
+                    <textarea name="textarea" id="textarea" cols="50" rows="5" required placeholder="...textarea"
                         style="resize: vertical;"></textarea>
                 </div>
                 <hr>
@@ -103,7 +103,7 @@
                 <div>
                     <input type="submit" value="Submit">
                     <input type="reset" value="Reset">
-                    <button id="clear">Clear</button>
+                    <button type="button" id="clear">Clear</button>
                 </div>
             </form>
         </section>
@@ -114,9 +114,19 @@
     <script>
         let clear = document.getElementById('clear');
         let input = document.getElementsByTagName('input')
+        let textarea = document.getElementsByTagName('textarea')
+    
         clear.addEventListener('click', function () {
-            input.forEach(e => {
-                e.value = ''
+            
+            Array.from(input).forEach(e => {
+                if (e.type !== 'submit' && e.type !== 'reset' && e.id !== 'clear') {
+                    e.value = '';
+                }
+            });
+            Array.from(textarea).forEach(e => {
+                if (e.type !== 'submit' && e.type !== 'reset' && e.id !== 'clear') {
+                    e.value = '';
+                }
             });
         })
     </script>
