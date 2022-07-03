@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+</head>
+
+<body>
+    <header></header>
+
+    <main>
+        <section>
+            <form>
+                <div>
+                    <label for="select">Select
+                        <select name="select" id="select">
+                            <option selected disabled>---The Boys---</option>
+                            <option value="Homelander">Homelander</option>
+                            <option value="Maeve">Maeve</option>
+                            <option value="Starlight">Starlight</option>
+                            <option value="Soldier Boy">Soldier Boy</option>
+                            <option value="Black Noir">Black Noir</option>
+                        </select>
+                    </label>
+                </div>
+                <hr>
+
+                <div>
+                    <fieldset>
+                        <legend>Choose your DC Legends</legend>
+                        <div>
+                            <input type="radio" name="dc-legend" id="dc-batman" checked>
+                            <label for="dc-batman">Batman</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="dc-legend" id="dc-superman">
+                            <label for="dc-superman">Superman</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="dc-legend" id="dc-blackadam">
+                            <label for="dc-blackadam">Black Adam</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <hr>
+
+                <div>
+                    <label for="datlist">Datalist
+                        <input type="text" name="" id="" list="datalist-browser">
+                        <datalist id="datalist-browser">
+                            <option value="Chrome">
+                            <option value="Edge">
+                            <option value="Firefox">
+                            <option value="Safari">
+                            <option value="Opera">
+                        </datalist>
+                    </label>
+                </div>
+                <hr>
+
+                <div>
+                    <label for="dino-select">Choose a dinosaur</label>
+                    <select id="dino-select">
+                        <option selected disabled></option>
+                        <optgroup label="Theropods">
+                            <option>Tyrannosaurus</option>
+                            <option>Velociraptor</option>
+                            <option>Deinonychus</option>
+                        </optgroup>
+                        <optgroup label="Sauropods">
+                            <option>Diplodocus</option>
+                            <option>Saltasaurus</option>
+                            <option>Apatosaurus</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <hr>
+
+                <div>
+                    <label for="progress-bar">Progress</label>
+                    <progress id="progress-bar" max="100" value="70"></progress>
+                </div>
+                <hr>
+
+                <div>
+                    <label for="meter-bar">Meter</label>
+                    <meter id="meter-bar" min="0" max="100" low="30" high="90" optimum="100" value="25"></meter>
+                </div>
+                <hr>
+
+                <div>
+                    <div>
+                        <label for="textarea">Tetarea</label>
+                    </div>
+                    <textarea name="textarea" id="textarea" cols="50" rows="5" placeholder="...textarea"
+                        style="resize: vertical;"></textarea>
+                </div>
+                <hr>
+
+                <div>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                    <button id="clear">Clear</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer></footer>
+
+    <script>
+        let clear = document.getElementById('clear');
+        let input = document.getElementsByTagName('input')
+        clear.addEventListener('click', function () {
+            input.forEach(e => {
+                e.value = ''
+            });
+        })
+    </script>
+</body>
+
+</html>

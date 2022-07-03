@@ -181,7 +181,7 @@
                             <option value="900">
                             <option value="100" label="100%">
                         </datalist>
-                        <span id="range-span"></span>
+                        <output id="range-span"></output>
                     </label>
                 </div>
                 <hr>
@@ -212,10 +212,10 @@
             })
             range_span.innerText = range.value;
         })
-        reset.addEventListener('click', function(){
+        reset.addEventListener('click', function () {
             range_span.innerText = range.value;
         })
-        range.addEventListener('input', function(){
+        range.addEventListener('input', function () {
             range_span.innerText = range.value
         })
     </script>
