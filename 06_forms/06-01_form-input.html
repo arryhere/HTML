@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Website</title>
 </head>
 
@@ -16,180 +16,182 @@
             <form action="backend.js">
                 <label for="search-box">Search
                     <input type="search" name="search-box" id="search-box" value="" list="datalist-search"
-                        maxlength="30" minlength="3" pattern=".+" placeholder="...search" size="50" required>
+                        maxlength="30" minlength="3" pattern=".+" placeholder="...search" size="50" required />
                     <datalist id="datalist-search">
-                        <option value="sample-search-1" label="search-label-1">
-                        <option value="sample-search-2" label="search-label-2">
+                        <option value="sample-search-1" label="search-label-1"></option>
+                        <option value="sample-search-2" label="search-label-2"></option>
                     </datalist>
                 </label>
-                <hr>
+                <hr />
 
                 <label for="text-box">Text
                     <input type="text" name="text-box" id="text-box" value="12345" list="datalist-text" maxlength="30"
                         minlength="3" pattern="^(\d*)$" title="Digits only [0-9]" placeholder="...text" size="50"
-                        required>
+                        required />
                     <datalist id="datalist-text">
-                        <option value="12345">
-                        <option value="54321">
+                        <option value="12345"></option>
+                        <option value="54321"></option>
                     </datalist>
                 </label>
-                <hr>
+                <hr />
 
                 <label for="number-box">Number
                     <input type="number" name="number-box" id="number-box" value="50" list="datalist-number" max="1000"
-                        min="10" placeholder="...number" step="5" required>
+                        min="10" placeholder="...number" step="5" required />
                     <datalist id="datalist-number">
-                        <option value="100">
-                        <option value="200">
+                        <option value="100"></option>
+                        <option value="200"></option>
                     </datalist>
                 </label>
-                <hr>
+                <hr />
 
                 <label for="email-box">Email
                     <input type="email" name="email-box" id="email-box" value="sample@example" list="datalist-email"
-                        maxlength="30" minlength="3" pattern="(\w+)(@)(\w+)" placeholder="...email" size="50" required>
+                        maxlength="30" minlength="3" pattern="(\w+)(@)(\w+)" placeholder="...email" size="50"
+                        required />
                     <datalist id="datalist-email">
-                        <option value="sample@example">
-                        <option value="example@sample">
+                        <option value="sample@example"></option>
+                        <option value="example@sample"></option>
                     </datalist>
                 </label>
-                <hr>
+                <hr />
 
                 <label for="password-box">Password
                     <input type="password" name="password-box" id="password-box" value="" maxlength="30" minlength="3"
                         pattern="([a-zA-Z0-9_!@#$%&*-+]{5,})" placeholder="...password" size="50"
-                        autocomplete="new-password" required>
+                        autocomplete="new-password" required />
                 </label>
-                <hr>
+                <hr />
 
                 <label for="tel-box">Tel
                     <input type="text" name="tel-box" id="tel-box" value="+123456789" list="datalist-tel" maxlength="15"
-                        minlength="4" pattern="(\+)(\d{4,15})" placeholder="...tel" size="50" required>
+                        minlength="4" pattern="(\+)(\d{4,15})" placeholder="...tel" size="50" required />
                     <datalist id="datalist-tel">
-                        <option value="+123456789">
-                        <option value="+987654321">
+                        <option value="+123456789"></option>
+                        <option value="+987654321"></option>
                     </datalist>
                 </label>
-                <hr>
+                <hr />
 
                 <label for="url-box">Url
                     <input type="text" name="url-box" id="url-box" value="www.example.com" list="datalist-url"
                         maxlength="50" minlength="5" pattern="(www)\.(\w+)\.([a-z]{2,3})(\.[a-z]{2,3})?"
-                        placeholder="...url" size="50">
+                        placeholder="...url" size="50" />
                     <datalist id="datalist-url">
-                        <option value="www.google.com">
-                        <option value="www.example.com">
+                        <option value="www.google.com"></option>
+                        <option value="www.example.com"></option>
                     </datalist>
                 </label>
-                <hr>
+                <hr />
 
                 <label for="date-box">Date
                     <input type="date" name="date-box" id="date-box" value="1999-05-28" max="2999-12-31"
-                        min="1999-01-01" step="2" pattern="\d{4}-\d{2}-\d{2}" required>
+                        min="1999-01-01" step="2" pattern="\d{4}-\d{2}-\d{2}" required />
                 </label>
-                <hr>
+                <hr />
 
                 <label for="time-box">Time
                     <input type="time" name="time-box" id="time-box" value="17:51:01" list="datalist" max="22:00"
-                        min="05:00" step="2" pattern="\d{2}:\d{2}">
+                        min="05:00" step="2" pattern="\d{2}:\d{2}" />
                     <datalist id="datalist-time">
-                        <option value="24:00">
-                        <option value="12:00">
+                        <option value="24:00"></option>
+                        <option value="12:00"></option>
                     </datalist>
                 </label>
-                <hr>
+                <hr />
 
                 <label for="date-time-local-box">Date-Time-Local
                     <input type="datetime-local" name="date-time-local-box" id="date-time-local-box"
                         value="1999-05-28T12:01:45" min="1999-01-01T00:00:00" max="2999-12-31T23:59:59" step="1"
-                        pattern="\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}" required>
+                        pattern="\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}" required />
                 </label>
-                <hr>
+                <hr />
 
                 <label for="week-box">Week
                     <input type="week" name="week-box" id="week-box" value="1999-W05" max="2999-W53" min="1999-W01"
-                        step="2" required>
+                        step="2" required />
                 </label>
-                <hr>
+                <hr />
 
                 <label for="month-box">Month
                     <input type="month" name="month-box" id="month-box" value="1999-05" list="datalist" max="2999-12"
-                        min="1999-01" step="2" pattern="\d{4}-\d{2}">
+                        min="1999-01" step="2" pattern="\d{4}-\d{2}" />
                     <datalist id="datalist-month">
-                        <option value="2005-09">
-                        <option value="2007-11">
+                        <option value="2005-09"></option>
+                        <option value="2007-11"></option>
                     </datalist>
                 </label>
-                <hr>
+                <hr />
 
                 <label for="color-box">Color
-                    <input type="color" name="color-box" id="color-box" value="#00E1FF">
+                    <input type="color" name="color-box" id="color-box" value="#00E1FF" />
                 </label>
-                <hr>
+                <hr />
 
                 <div>
                     <h1>Check Box</h1>
                     <div>
                         <label for="check-box-1">Check Box 1
-                            <input type="checkbox" name="check-box" id="check-box-1" value="chk-box-1" checked>
+                            <input type="checkbox" name="check-box" id="check-box-1" value="chk-box-1" checked />
                         </label>
                     </div>
                     <div>
                         <label for="check-box-2">Check Box 2
-                            <input type="checkbox" name="check-box" id="check-box-2" value="chk-box-2" required>
+                            <input type="checkbox" name="check-box" id="check-box-2" value="chk-box-2" required />
                         </label>
                     </div>
                     <!-- check-box=chk-box-1&check-box=chk-box-2      // backend data -->
                 </div>
-                <hr>
+                <hr />
 
                 <fieldset>
                     <legend>Radio Buttons</legend>
                     <div>
                         <label for="radio-1">Radio 1
-                            <input type="radio" name="radio" id="radio-1" value="radio-btn-1" checked>
+                            <input type="radio" name="radio" id="radio-1" value="radio-btn-1" checked />
                         </label>
                     </div>
                     <div>
                         <label for="radio-2">Radio 2
-                            <input type="radio" name="radio" id="radio-2" value="radio-btn-2">
+                            <input type="radio" name="radio" id="radio-2" value="radio-btn-2" />
                         </label>
                     </div>
                     <div>
                         <label for="radio-3">Radio 3
-                            <input type="radio" name="radio" id="radio-3" value="radio-btn-3">
+                            <input type="radio" name="radio" id="radio-3" value="radio-btn-3" />
                         </label>
                     </div>
                 </fieldset>
-                <hr>
+                <hr />
 
                 <div>
                     <label for="range-slider">Range
                         <input type="range" name="range" id="range-slider" list="datalist-range" value="300" max="1000"
-                            min="0" step="100">
+                            min="0" step="100" />
                         <datalist id="datalist-range">
-                            <option value="0" label="0%">
-                            <option value="100">
-                            <option value="200">
-                            <option value="300">
-                            <option value="400">
-                            <option value="500" label="50%">
-                            <option value="500">
-                            <option value="600">
-                            <option value="700">
-                            <option value="800">
-                            <option value="900">
-                            <option value="100" label="100%">
+                            <option value="0" label="0%"></option>
+                            <option value="100"></option>
+                            <option value="200"></option>
+                            <option value="300"></option>
+                            <option value="400"></option>
+                            <option value="500" label="50%"></option>
+                            <option value="500"></option>
+                            <option value="600"></option>
+                            <option value="700"></option>
+                            <option value="800"></option>
+                            <option value="900"></option>
+                            <option value="100" label="100%"></option>
                         </datalist>
+
                         <output id="range-span"></output>
                     </label>
                 </div>
-                <hr>
+                <hr />
 
                 <div>
-                    <input type="submit" value="Submit">
-                    <input type="reset" value="Reset">
-                    <input type="button" value="Clear" id="clear">
+                    <input type="submit" value="Submit" />
+                    <input type="reset" value="Reset" />
+                    <input type="button" value="Clear" id="clear" />
                 </div>
             </form>
         </section>
@@ -199,25 +201,25 @@
 
     <script>
         let clear = document.getElementById('clear');
-        let input = document.getElementsByTagName('input')
+        let input = document.getElementsByTagName('input');
         let range = document.querySelector('input[type="range"]');
         let reset = document.querySelector('input[type="reset"]');
-        let range_span = document.getElementById('range-span')
+        let range_span = document.getElementById('range-span');
         range_span.innerText = range.value;
         clear.addEventListener('click', function () {
-            Array.from(input).forEach(e => {
+            Array.from(input).forEach((e) => {
                 if (e.type !== 'submit' && e.type !== 'reset' && e.id !== 'clear') {
                     e.value = '';
                 }
-            })
+            });
             range_span.innerText = range.value;
-        })
+        });
         reset.addEventListener('click', function () {
             range_span.innerText = range.value;
-        })
+        });
         range.addEventListener('input', function () {
-            range_span.innerText = range.value
-        })
+            range_span.innerText = range.value;
+        });
     </script>
 </body>
 
